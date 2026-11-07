@@ -1,0 +1,141 @@
+h1 {
+    color: rgb(231, 194, 13);
+    font-size: 2em;
+}
+
+h3 {
+    color: rgb(231, 194, 13)
+}
+p {
+    color: rgb(0, 0, 0);
+}
+
+p1 { color: rgb(231, 194, 13)
+
+}
+
+p2 { color: rgb(231, 194, 13)
+
+}
+
+body {
+    background-color: rgb(44, 44, 44);
+    .pseudo-list li:nth-child(odd) {
+        background-color: rgb(44, 44, 44);
+      }
+      
+      .pseudo-list li:nth-child(even) {
+        background-color: rgb(231, 194, 13);
+      }
+
+    .filter-image {
+  width: 200px;
+  height: auto;
+    }
+
+    .filter-image {
+        filter: grayscale(100%);
+        transition: filter 0.3s ease;
+     }
+      
+      .filter-image:hover {
+        filter: grayscale(0%);
+      } 
+
+    .quote {
+        position: relative;
+        padding-left: 20px;
+        font-style: italic;
+      }
+      
+      .quote::before {
+        content: '“';
+        font-size: 40px;
+        position: absolute;
+        left: -3px;
+        top: -10px;
+        color: lightgray;
+      }
+}
+
+.content-box {
+    padding: 40px;
+    margin: 20px;
+    background-color: #000000;
+    border: 1px solid #ccc;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid rgb(231, 194, 13);
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: rgb(231, 194, 13);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"] {
+    padding: 8px;
+    border: 1px solid rgb(231, 194, 13);
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    background-color: rgb(231, 194, 13);
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #645904;
+    transition: background-color 0.3s ease;
+}
+
+    .transition-button {
+        background-color: rgb(231, 194, 13);
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.6s ease;
+      }
+      
+      .transition-button:hover {
+        background-color: #645904;
+      }
+
+.animation-box {
+        width: 50px;
+        height: 50px;
+        background-color: rgb(231, 194, 13);
+        position: relative;
+        animation: move 6s infinite alternate;
+      }
+      
+      @keyframes move {
+        from {
+          left: 0;
+        }
+        to {
+          left: 100px;
+        }
+      }
